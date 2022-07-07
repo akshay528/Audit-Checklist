@@ -15,7 +15,7 @@ phases:
   post_build:
     commands:
       - echo Build completed on `date`
-      -mv target/*.jar audit-checklist.jar
+      -mv target/*.jar audit-severity.jar
 artifacts:
   files:
-    - audit-checklist.jar
+    - audit-severity.jar
