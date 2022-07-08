@@ -10,12 +10,12 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn install
-      -mvn compile
-      -mvn package
+      - mvn compile
+      - mvn package
   post_build:
     commands:
       - echo Build completed on `date`
-      -mv target/*.jar audit-severity.jar
+      - mv target/*.jar audit-severity.jar
 artifacts:
   files:
     - audit-severity.jar
